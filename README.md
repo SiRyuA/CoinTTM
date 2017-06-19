@@ -14,4 +14,4 @@ Cryptocurrency Price Info Reader
 - Node.JS
 
 ### License
-GNU GPLv3, CC BY-NC-SA
+- GNU GPLv3, CC BY-NC-SA
