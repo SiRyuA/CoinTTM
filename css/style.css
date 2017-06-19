@@ -1,0 +1,148 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+*,
+*:before,
+*:after {margin:0;padding:0;outline:none;text-decoration:none;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.clearfix:before,
+.clearfix:after {	display: table;content: " " }
+.clearfix:after { clear: both }
+body {background:#212121;color:#fff;font-family:'나눔고딕', NanumGothic, 'Nanum Gothic';-webkit-app-region: drag}
+input {-webkit-border-radius:0;-webkit-appearance:none}
+a{text-decoration:none;color:#fff}
+
+.col1,
+.col2,
+.col3,
+.col4,
+.col5,
+.col6,
+.col7,
+.col8,
+.col9,
+.col10,
+.col11,
+.col12 {position: relative;min-height: 1px;padding:10px;}
+
+@media (min-width: 850px) {
+  .col1,
+  .col2,
+  .col3,
+  .col4,
+  .col5,
+  .col6,
+  .col7,
+  .col8,
+  .col9,
+  .col10,
+  .col11,
+  .col12 {float: left;}
+  .col12 {width: 100%;}
+  .col11 {width: 91.66666667%;}
+  .col10 {width: 83.33333333%;}
+  .col9 {width: 75%;}
+  .col8 {width: 66.66666667%;}
+  .col7 {width: 58.33333333%;}
+  .col6 {width: 50%;}
+  .col5 {width: 41.66666667%;}
+  .col4 {width: 33.33333333%;}
+  .col3 {width: 25%;}
+  .col2 {width: 16.66666667%;}
+  .col1 {width: 8.33333333%;}
+}
+
+table {border-collapse: collapse;width: 100%;}
+table caption {font-size:0;}
+th, td {padding: 8px;}
+tr:nth-child(even){background-color: #222}
+tr:nth-child(even){background-color: #191919}
+
+::-webkit-scrollbar {display:none;}
+/*
+::-webkit-scrollbar {width: 3px;height:3px;}
+::-webkit-scrollbar-track {background: #212121;}
+::-webkit-scrollbar-thumb {background: #FFA000;}
+::-webkit-scrollbar-button {width:0px;height:0px;background: #FFB300;}
+::-webkit-scrollbar-corner {background: #FFB300;}
+*/
+#titlebar #wmin,
+#titlebar #waoff,
+#titlebar #wmini,
+#container #content #info,
+#container #content #guide,
+#container #content #money,
+#container #content #usdt,
+#container #content #btc,
+#container #content #eth,
+#container #content #etc,
+#container #content #xrp,
+#container #content #strat,
+#container #content #doge,
+#container #content #dash,
+#container #content #ltc {display:none;}
+
+#titlebar {margin:0;background:#303030;top:0;width:100%;height:30px;line-height:30px;position:fixed;z-index:1;-webkit-app-region: drag}
+
+#titlebar a span {font-weight:bold;}
+#titlebar #brand {margin-left:10px;}
+#titlebar #brand img {width:12px;height:12px;}
+#titlebar #close {margin-right:6px;}
+
+#titlebar #wmin,
+#titlebar #wmax,
+#titlebar #wmini,
+#titlebar #waon,
+#titlebar #waoff {margin-right:6px;}
+
+#titlebar #close,
+#titlebar #wmin,
+#titlebar #wmax,
+#titlebar #wmini,
+#titlebar #waon,
+#titlebar #waoff {float:right;margin-top:2px;}
+#titlebar .btn {color:#757575;}
+#titlebar .btn:hover {color:#E0E0E0;transition: color 0.75s;}
+#container {margin-top:30px;-webkit-app-region: no-drag;}
+
+.touch {-webkit-app-region: no-drag;}
+.notouch {-webkit-app-region: drag}
+
+#nav {width:60px;height:100%;padding:4px 0;background:#242424;position:fixed!important;overflow-x:hidden;overflow-y:auto;}
+#nav a {padding:6px;}
+#nav .imgbtn:hover {background:#424242;transition: background 0.75s;}
+#nav img {margin:2px 0;padding:6px;width:48px;height:48px;}
+#content {margin-left:60px;}
+
+#home h1,
+#info h1,
+#guide h1,
+.coininfo h1 {font-size:24px;}
+
+#home img,
+#info img,
+#guide img,
+.coininfo img {width:20px;height:20px;margin-bottom:-2px;}
+
+#home h1 a,
+#info h1 a,
+#guide h1 a,
+.coininfo h1 a {float:right;font-size:26px;margin-top:2px;}
+
+#home h1 a:hover,
+#info h1 a:hover,
+#guide h1 a:hover,
+.coininfo h1 a:hover {color:#757575;transition: color 0.75s;}
+
+#home #copy,
+.coininfo #copy {margin-right:6px;}
+
+#home table {text-align:center;}
+.coininfo table {text-align:left;}
+
+#info table {margin:10px 0;}
+#info .copyright {text-align: center;}
+#info .ment {margin:30px 0;font-size:24px;font-weight:bold;text-align:center;}
+#info .wallet {margin:0;padding:10px;text-align:center;word-break:break-all;}
+#info .wallet img {margin:20px;width:160px;height:160px;}
+#info .wallet p {margin:0 0 2px 0;padding:8px 4px;border:0px;border-radius:4px;background:#000;}
+#info .wallet p:hover{background:#424242;transition: background 0.75s;}

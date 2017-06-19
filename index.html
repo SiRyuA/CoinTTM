@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>TO THE MOON (v0.0.1)</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+  <div id="titlebar">
+    <a id="brand"><img src="./img/icons.png" alt="icons"> <span>TO THE MOON</span> (v0.0.1)</a>
+    <a id="close" class="touch btn" href="javascript:void(0)" onclick="Appclose()"><span><i class="material-icons">clear</i></span></a>
+    <a id="wmax" class="touch btn" href="javascript:void(0)" onclick="AppMaxWindow()"><span><i class="material-icons">fullscreen</i></span></a>
+    <a id="wmin" class="touch btn" href="javascript:void(0)" onclick="AppMinWindow()"><span><i class="material-icons">fullscreen_exit</i></span></a>
+    <!--<a id="wmini" class="touch btn" href="javascript:void(0)" onclick="AppMiniWindow()"><span><i class="material-icons">expand_less</i></span></a>-->
+    <a id="waon" class="touch btn" href="javascript:void(0)" onclick="AppAlwaysOn()"><span><i class="material-icons">flip_to_front</i></span></a>
+    <a id="waoff" class="touch btn" href="javascript:void(0)" onclick="AppAlwaysOff()"><span><i class="material-icons">flip_to_back</i></span></a>
+  </div>
+  <div id="container">
+
+    <div id="nav"></div>
+
+    <div id="content">
+      <div id="home"></div>
+      <div id="info"></div>
+      <div id="guide"></div>
+      <div id="money" class="coininfo"></div>
+      <div id="usdt" class="coininfo"></div>
+      <div id="btc" class="coininfo"></div>
+      <div id="eth" class="coininfo"></div>
+      <div id="etc" class="coininfo"></div>
+      <div id="xrp" class="coininfo"></div>
+      <div id="strat" class="coininfo"></div>
+      <div id="doge" class="coininfo"></div>
+      <div id="dash" class="coininfo"></div>
+      <div id="ltc" class="coininfo"></div>
+    </div>
+
+  <div>
+  <script src="./js/clipboard.min.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/getjson.js"></script>
+  <script src="./js/getdata.js"></script>
+  </body>
+</html>

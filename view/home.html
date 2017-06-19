@@ -1,0 +1,165 @@
+<div class="col12">
+  <h1><img src="./img/home.png" alt="Home"> HOME:전체요약정보 <a id="reload" href="javascript:void(0)" onclick="GetData_ALL()"><i class="material-icons">sync</i></a> <a id="copy" href="javascript:void(0)" data-clipboard-target="#homeinfo"><i class="material-icons">content_copy</i></a></h1>
+  <span>책을 클릭해서 안내를 꼭 읽어주세요 :)</span>
+</div>
+<div id="homeinfo">
+  <div class="col3">
+    <h1><img src="./img/exchange.png" alt="Exchange"> Exchange:환율</h1>
+    <table>
+      <col width=25%><col width=25%><col width=25%><col width=25%>
+      <tr><td>USD</td><td>JPY</td><td>CNY</td><td>EUR</td></tr>
+      <tr>
+        <td>&#36; <span id="HomeMoney_USD">Loading..</span></td>
+        <td>&#165; <span id="HomeMoney_JPY">Loading..</span></td>
+        <td>&#165; <span id="HomeMoney_CNY">Loading..</span></td>
+        <td>&#8364; <span id="HomeMoney_EUR">Loading..</span></td>
+      </tr>
+    </table>
+  </div>
+  <div class="col3">
+    <h1><img src="./img/usdt.png" alt="USDT"> USDT:테터달러</h1>
+    <table>
+      <col width=35%><col width=35%><col width=30%>
+      <tr><td>USD</td><td>KRW</td></tr>
+      <tr>
+        <td>&#36; <span id="HomeUSDT_USD">Loading..</span></td>
+        <td>&#8361; <span id="HomeUSDT_KRW">Loading..</span></td>
+      </tr>
+    </table>
+  </div>
+  <div class="col3">
+    <h1><img src="./img/bitcoin.png" alt="Bitcoin"> BTC:비트코인</h1>
+    <table>
+      <col width=35%><col width=35%><col width=30%>
+      <tr><td>USDT</td><td>KRW</td><td>Pre %</td></tr>
+      <tr>
+        <td><span id="HomeUSDT_BTC">Loading..</span></td>
+        <td>&#8361; <span id="HomeKRW_BTC">Loading..</span></td>
+        <td><span id="HomePre_BTC">Loading..</span> %</td>
+      </tr>
+    </table>
+  </div>
+  <div class="col3">
+    <h1><img src="./img/ethereum.png" alt="Ethereum"> ETH:이더리움</h1>
+    <table>
+      <col width=35%><col width=35%><col width=30%>
+      <tr><td>USDT</td><td>KRW</td><td>Pre %</td></tr>
+      <tr>
+        <td><span id="HomeUSDT_ETH">Loading..</span></td>
+        <td>&#8361; <span id="HomeKRW_ETH">Loading..</span></td>
+        <td><span id="HomePre_ETH">Loading..</span> %</td>
+      </tr>
+    </table>
+  </div>
+  <div class="col3">
+    <h1><img src="./img/ethereumclassic.png" alt="Ethereum-Classic"> ETC:이더리움클래식</h1>
+    <table>
+      <col width=35%><col width=35%><col width=30%>
+      <tr><td>USDT</td><td>KRW</td><td>Pre %</td></tr>
+      <tr>
+        <td><span id="HomeUSDT_ETC">Loading..</span></td>
+        <td>&#8361; <span id="HomeKRW_ETC">Loading..</span></td>
+        <td><span id="HomePre_ETC">Loading..</span> %</td>
+      </tr>
+    </table>
+  </div>
+  <div class="col3">
+    <h1><img src="./img/ripple.png" alt="Ripple"> XRP:리플</h1>
+    <table>
+      <col width=35%><col width=35%><col width=30%>
+      <tr><td>USDT</td><td>KRW</td><td>Pre %</td></tr>
+      <tr>
+        <td><span id="HomeUSDT_XRP">Loading..</span></td>
+        <td>&#8361; <span id="HomeKRW_XRP">Loading..</span></td>
+        <td><span id="HomePre_XRP">Loading..</span> %</td>
+      </tr>
+    </table>
+  </div>
+  <div class="col3">
+    <h1><img src="./img/stratis.png" alt="Stratis"> STRAT:스트라티스</h1>
+    <table>
+      <col width=50%><col width=50%>
+      <tr><td>BTC</td><td>KRW</td></tr>
+      <tr>
+        <td><span id="HomeBTC_STRAT">Loading..</span></td>
+        <td>&#8361; <span id="HomeKRW_STRAT">Loading..</span></td>
+      </tr>
+    </table>
+  </div>
+  <div class="col3">
+    <h1><img src="./img/dogecoin.png" alt="Dogecoin"> DOGE:도지코인</h1>
+    <table>
+      <col width=50%><col width=50%>
+      <tr><td>BTC</td><td>KRW</td></tr>
+      <tr>
+        <td><span id="HomeBTC_DOGE">Loading..</span></td>
+        <td>&#8361; <span id="HomeKRW_DOGE">Loading..</span></td>
+      </tr>
+    </table>
+  </div>
+  <div class="col3">
+    <h1><img src="./img/dash.png" alt="Dash"> DASH:대시</h1>
+    <table>
+      <col width=35%><col width=35%><col width=30%>
+      <tr><td>USDT</td><td>KRW</td><td>Pre %</td></tr>
+      <tr>
+        <td><span id="HomeUSDT_DASH">Loading..</span></td>
+        <td>&#8361; <span id="HomeKRW_DASH">Loading..</span></td>
+        <td><span id="HomePre_DASH">Loading..</span> %</td>
+      </tr>
+    </table>
+  </div>
+  <div class="col3">
+    <h1><img src="./img/litecoin.png" alt="Litecoin"> LTC:라이트코인</h1>
+    <table>
+      <col width=35%><col width=35%><col width=30%>
+      <tr><td>USDT</td><td>KRW</td><td>Pre %</td></tr>
+      <tr>
+        <td><span id="HomeUSDT_LTC">Loading..</span></td>
+        <td>&#8361; <span id="HomeKRW_LTC">Loading..</span></td>
+        <td><span id="HomePre_LTC">Loading..</span> %</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<script>
+  function GetHome() {
+    GetData_D2D("MoneyUSD", "HomeMoney_USD");
+    GetData_D2D("MoneyJPY", "HomeMoney_JPY");
+    GetData_D2D("MoneyCNY", "HomeMoney_CNY");
+    GetData_D2D("MoneyEUR", "HomeMoney_EUR");
+
+    GetData_D2D("CoinMarketUSDT_USD", "HomeUSDT_USD");
+    GetData_D2D("CoinMarketUSDT_KRW", "HomeUSDT_KRW");
+
+    GetData_Addition(["CoinMarketUSDT_BTC", "PoloniexUSDT_BTC"], "HomeUSDT_BTC", 2);
+    GetData_Addition(["CoinMarketKRW_BTC", "PoloniexKRW_BTC"], "HomeKRW_BTC", 0);
+    GetData_D2D("Pre_BTC", "HomePre_BTC");
+
+    GetData_Addition(["CoinMarketUSDT_ETH", "PoloniexUSDT_ETH"], "HomeUSDT_ETH", 2);
+    GetData_Addition(["CoinMarketKRW_ETH", "PoloniexKRW_ETH"], "HomeKRW_ETH", 0);
+    GetData_D2D("Pre_ETH", "HomePre_ETH");
+
+    GetData_Addition(["CoinMarketUSDT_ETC", "PoloniexUSDT_ETC"], "HomeUSDT_ETC", 2);
+    GetData_Addition(["CoinMarketKRW_ETC", "PoloniexKRW_ETC"], "HomeKRW_ETC", 0);
+    GetData_D2D("Pre_ETC", "HomePre_ETC");
+
+    GetData_Addition(["CoinMarketUSDT_XRP", "PoloniexUSDT_XRP"], "HomeUSDT_XRP", 2);
+    GetData_Addition(["CoinMarketKRW_XRP", "PoloniexKRW_XRP"], "HomeKRW_XRP", 0);
+    GetData_D2D("Pre_XRP", "HomePre_XRP");
+
+    GetData_D2D("PoloniexBTC_STRAT", "HomeBTC_STRAT");
+    GetData_D2D("CoinMarketKRW_STRAT", "HomeKRW_STRAT");
+
+    GetData_D2D("PoloniexBTC_DOGE", "HomeBTC_DOGE");
+    GetData_D2D("CoinMarketKRW_DOGE", "HomeKRW_DOGE");
+
+    GetData_Addition(["CoinMarketUSDT_DASH", "PoloniexUSDT_DASH"], "HomeUSDT_DASH", 2);
+    GetData_D2D("CoinMarketKRW_DASH", "HomeKRW_DASH");
+    GetData_D2D("Pre_DASH", "HomePre_DASH");
+
+    GetData_Addition(["CoinMarketUSDT_LTC", "PoloniexUSDT_LTC"], "HomeUSDT_LTC", 2);
+    GetData_D2D("CoinMarketKRW_LTC", "HomeKRW_LTC");
+    GetData_D2D("Pre_LTC", "HomePre_LTC");
+  }
+</script>

@@ -1,0 +1,23 @@
+<a href="javascript:void(0)" onclick="ClickBtn(0)"><img src="./img/home.png" alt="Home" class="imgbtn"></a>
+<a href="javascript:void(0)" onclick="ClickBtn(1)"><img src="./img/info.png" alt="Info" class="imgbtn"></a>
+<a href="javascript:void(0)" onclick="ClickBtn(2)"><img src="./img/guide.png" alt="Guide" class="imgbtn"></a>
+<a href="javascript:void(0)" onclick="ClickBtn(3)"><img src="./img/exchange.png" alt="Exchange" class="imgbtn"></a>
+<a href="javascript:void(0)" onclick="ClickBtn(4)"><img src="./img/usdt.png" alt="USDT" class="imgbtn"></a>
+<a href="javascript:void(0)" onclick="ClickBtn(5)"><img src="./img/bitcoin.png" alt="Bitcoin" class="imgbtn"></a>
+<a href="javascript:void(0)" onclick="ClickBtn(6)"><img src="./img/ethereum.png" alt="Ethereum" class="imgbtn"></a>
+<a href="javascript:void(0)" onclick="ClickBtn(7)"><img src="./img/ethereumclassic.png" alt="Ethereum-Classic" class="imgbtn"></a>
+<a href="javascript:void(0)" onclick="ClickBtn(8)"><img src="./img/ripple.png" alt="Ripple" class="imgbtn"></a>
+<a href="javascript:void(0)" onclick="ClickBtn(9)"><img src="./img/stratis.png" alt="Stratis" class="imgbtn"></a>
+<a href="javascript:void(0)" onclick="ClickBtn(10)"><img src="./img/dogecoin.png" alt="Dogecoin" class="imgbtn"></a>
+<a href="javascript:void(0)" onclick="ClickBtn(11)"><img src="./img/dash.png" alt="Dash" class="imgbtn"></a>
+<a href="javascript:void(0)" onclick="ClickBtn(12)"><img src="./img/litecoin.png" alt="Litecoin" class="imgbtn"></a>
+<a><img src="./img/temp.png" alt="temp"></a>
+<script>
+  function ClickBtn(type) {
+    var View = ["#home", "#info", "#guide", "#money", "#usdt", "#btc", "#eth", "#etc", "#xrp", "#strat", "#doge", "#dash", "#ltc"];
+    for(let i=0;i<View.length;i++) {
+        if(i == type) $(View[i]).show("slow");
+        else $(View[i]).hide("slow");
+    }
+  }
+</script>

@@ -1,0 +1,22 @@
+<div class="col4">
+  <h1><img src="./img/usdt.png" alt="USDT"> USDT:테터달러 <a id="reload" href="javascript:void(0)" onclick="GetUSDT()"><i class="material-icons">sync</i></a> <a id="copy" href="javascript:void(0)" data-clipboard-target="#usdtinfo"><i class="material-icons">content_copy</i></a></h1>
+  <table id="usdtinfo">
+    <caption>USDT:테터달러 정보</caption>
+    <col width=40%>
+    <col width=60%>
+    <tr><td>USD</td><td>: &#36; <span id="CoinMarketUSDT_USD">Loading..</span></td></tr>
+    <tr><td>KRW</td><td>: &#8361; <span id="CoinMarketUSDT_KRW">Loading..</span></td></tr>
+    <tr><td>JPY</td><td>: &#165; <span id="CoinMarketUSDT_JPY">Loading..</span></td></tr>
+    <tr><td>CNY</td><td>: &#165; <span id="CoinMarketUSDT_CNY">Loading..</span></td></tr>
+    <tr><td>EUR</td><td>: &#8364; <span id="CoinMarketUSDT_EUR">Loading..</span></td></tr>
+  </table>
+</div>
+<script>
+  function GetUSDT() {
+    GetData_CoinMarket("tether", "USD", "CoinMarketUSDT_USD", 2);
+    GetData_CoinMarket("tether", "KRW", "CoinMarketUSDT_KRW", 0);
+    GetData_CoinMarket("tether", "JPY", "CoinMarketUSDT_JPY", 2);
+    GetData_CoinMarket("tether", "CNY", "CoinMarketUSDT_CNY", 2);
+    GetData_CoinMarket("tether", "EUR", "CoinMarketUSDT_EUR", 2);
+  }
+</script>

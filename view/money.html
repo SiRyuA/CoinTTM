@@ -1,0 +1,20 @@
+<div class="col4">
+  <h1><img src="./img/exchange.png" alt="Exchange"> Exchange:환율 <a id="reload" href="javascript:void(0)" onclick="GetMoney()"><i class="material-icons">sync</i></a> <a id="copy" href="javascript:void(0)" data-clipboard-target="#exchangeinfo"><i class="material-icons">content_copy</i></a></h1>
+  <table id="exchangeinfo">
+    <caption>Exchange:환율 정보</caption>
+    <col width=40%>
+    <col width=60%>
+    <tr><td>USD</td><td>: &#36; <span id="MoneyUSD">Loading..</span></td></tr>
+    <tr><td>JPY</td><td>: &#165; <span id="MoneyJPY">Loading..</span></td></tr>
+    <tr><td>CNY</td><td>: &#165; <span id="MoneyCNY">Loading..</span></td></tr>
+    <tr><td>EUR</td><td>: &#8364; <span id="MoneyEUR">Loading..</span></td></tr>
+  </table>
+</div>
+<script>
+  function GetMoney() {
+    GetData_Money("USDKRW", "MoneyUSD");
+    GetData_Money("JPYKRW", "MoneyJPY");
+    GetData_Money("CNYKRW", "MoneyCNY");
+    GetData_Money("EURKRW", "MoneyEUR");
+  }
+</script>

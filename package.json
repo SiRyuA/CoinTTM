@@ -1,0 +1,16 @@
+{
+  "name": "To-The-Moon",
+  "productName": "TO THE MOON",
+  "version": "0.0.1",
+  "main": "main.js",
+  "devDependencies": {
+    "electron": "^1.6.11",
+    "electron-installer-windows": "^0.2.0",
+    "electron-packager": "^8.7.1"
+  },
+  "scripts": {
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=/icons.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=/icons.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"TO THE MOON\"",
+    "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=assets/icons.png --prune=true --out=release-builds"
+  }
+}
